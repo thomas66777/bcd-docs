@@ -21,7 +21,7 @@ export class AppServer {
         this._app = createExpressApp()
 
         // Plugin the Routes
-        const swaggerApiPathNew = `/swagger`.replace(/\/\//, '/')
+        const swaggerApiPathNew = `/${process.argv[3] == 'white' ? process.env.API_PREFIX_WHITE : process.env.API_PREFIX_NEW}`.replace(/\/\//, '/')
         const swagger = process.argv[3] == 'white' ? swaggerWhite : swaggerNew
 
         this._app.use(swaggerApiPathNew, swaggerUi.serve, swaggerUi.setup({
