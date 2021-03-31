@@ -3,9 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Kukai Indexer Dependencies</title>
-        
-        <meta name="robots" content="noindex" />
+        <title>api-contract-tokens - Kukai Indexer Dependencies</title>
         
         
 
@@ -97,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="bcd-swagger.html"><strong aria-hidden="true">1.</strong> BCD Swagger</a></li><li class="chapter-item expanded "><a href="bcd-kukai-depend.html"><strong aria-hidden="true">2.</strong> Kukai BCD Dependencies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="api-tokens-transfers.html"><strong aria-hidden="true">2.1.</strong> api-tokens-transfers</a></li><li class="chapter-item expanded "><a href="api-bigmap.html"><strong aria-hidden="true">2.2.</strong> api-bigmap</a></li><li class="chapter-item expanded "><a href="api-account.html"><strong aria-hidden="true">2.3.</strong> api-account</a></li><li class="chapter-item expanded "><a href="api-account-metadata.html"><strong aria-hidden="true">2.4.</strong> api-account-metadata</a></li><li class="chapter-item expanded "><a href="api-contract.html"><strong aria-hidden="true">2.5.</strong> api-contract</a></li><li class="chapter-item expanded "><a href="api-contract-storage.html"><strong aria-hidden="true">2.6.</strong> api-contract-storage</a></li><li class="chapter-item expanded "><a href="api-contract-tokens.html"><strong aria-hidden="true">2.7.</strong> api-contract-tokens</a></li></ol></li><li class="chapter-item expanded "><a href="tzkt-kukai-depend.html"><strong aria-hidden="true">3.</strong> Kukai TZKT Dependencies</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="bcd-swagger.html"><strong aria-hidden="true">1.</strong> BCD Swagger</a></li><li class="chapter-item expanded "><a href="bcd-kukai-depend.html"><strong aria-hidden="true">2.</strong> Kukai BCD Dependencies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="api-tokens-transfers.html"><strong aria-hidden="true">2.1.</strong> api-tokens-transfers</a></li><li class="chapter-item expanded "><a href="api-bigmap.html"><strong aria-hidden="true">2.2.</strong> api-bigmap</a></li><li class="chapter-item expanded "><a href="api-account.html"><strong aria-hidden="true">2.3.</strong> api-account</a></li><li class="chapter-item expanded "><a href="api-account-metadata.html"><strong aria-hidden="true">2.4.</strong> api-account-metadata</a></li><li class="chapter-item expanded "><a href="api-contract.html"><strong aria-hidden="true">2.5.</strong> api-contract</a></li><li class="chapter-item expanded "><a href="api-contract-storage.html"><strong aria-hidden="true">2.6.</strong> api-contract-storage</a></li><li class="chapter-item expanded "><a href="api-contract-tokens.html" class="active"><strong aria-hidden="true">2.7.</strong> api-contract-tokens</a></li></ol></li><li class="chapter-item expanded "><a href="tzkt-kukai-depend.html"><strong aria-hidden="true">3.</strong> Kukai TZKT Dependencies</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,411 +163,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="quest-system"><a class="header" href="#quest-system">Quest System</a></h2>
-<p>BetterCallDev has two <code>swagger.json</code>:</p>
-<ul>
-<li><a href="http://reward.tezos.help/bcd-new">new</a></li>
-<li><a href="http://reward.tezos.help/bcd-white">white</a></li>
-</ul>
-<h2 id="kukai-dependencies"><a class="header" href="#kukai-dependencies">Kukai Dependencies</a></h2>
-<p>All better-call-dev dependencies are in <code>tzkt.service.ts</code></p>
-<h4 id="better-call-dev"><a class="header" href="#better-call-dev">Better Call Dev</a></h4>
-<blockquote>
-<p><code>this.bcd</code> = <code>https://api.better-call.dev/v1</code></p>
-</blockquote>
-<ul>
-<li><a href="./api-tokens-transfers.html"><code>${this.bcd}/tokens/${this.network}/transfers/${address}?size=20&amp;offset=0</code></a></li>
-<li><a href="./api-bigmap.html"><code>${this.bcd}/bigmap/${this.network}/${bigMapId}/keys</code></a></li>
-<li><a href="./api-account.html"><code>${this.bcd}/account/${this.network}/${address}</code></a></li>
-<li><a href="./api-account-metadata.html"><code>${this.bcd}/account/${this.network}/${contractAddress}/metadata</code></a></li>
-<li><a href="./contract.html"><code>${this.bcd}/contract/${this.network}/${contractAddress}</code></a></li>
-<li><a href="./api-contract-storage.html"><code>${this.bcd}/contract/${this.network}/${contractAddress}/storage</code></a></li>
-<li><a href="./api-contract-tokens.html"><code>${this.bcd}/contract/${this.network}/${contractAddress}/tokens</code></a></li>
-</ul>
-<h3 id="api-tokens-transfers"><a class="header" href="#api-tokens-transfers">api-tokens-transfers</a></h3>
-<ul>
-<li><a href="./api_results/tokens_white.json">curl https://white.better-call.dev/v1/tokens/edo2net/transfers/tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf</a></li>
-<li><a href="./api_results/tokens_ee.json">curl https://ee.better-call.dev/v1/tokens/edo2net/transfers/tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf</a></li>
-</ul>
-<blockquote>
-<p>No Diffs except <code>indexed_time</code></p>
-</blockquote>
-<pre><code class="language-json">{
-   transfers: [
-     {
--      indexed_time: 1614717689247746
-+      indexed_time: 1616783365594028
-     }
-     {
--      indexed_time: 1614717599231048
-+      indexed_time: 1616783365207407
-     }
-     {
--      indexed_time: 1614717449409175
-+      indexed_time: 1616783364563806
-     }
-     {
--      indexed_time: 1614717299225765
-+      indexed_time: 1616783363794430
-     }
-     {
--      indexed_time: 1614717239267572
-+      indexed_time: 1616783363310621
-     }
-     {
--      indexed_time: 1614716909229720
-+      indexed_time: 1616783362268601
-     }
-     {
--      indexed_time: 1614716249274687
-+      indexed_time: 1616783359205972
-     }
-     {
--      indexed_time: 1614712898943135
-+      indexed_time: 1616783300749202
-     }
-     {
--      indexed_time: 1614712897537271
-+      indexed_time: 1616783299760258
-     }
-     {
--      indexed_time: 1614712895730476
-+      indexed_time: 1616783298557812
-     }
-     {
--      indexed_time: 1614712894921908
-+      indexed_time: 1616783297615270
-     }
-     {
--      indexed_time: 1614712890359622
-+      indexed_time: 1616783293486862
-     }
-     {
--      indexed_time: 1614712888969220
-+      indexed_time: 1616783292594745
-     }
-     {
--      indexed_time: 1614712880947674
-+      indexed_time: 1616783286309902
-     }
-     {
--      indexed_time: 1614712880409147
-+      indexed_time: 1616783285881958
-     }
-     {
--      indexed_time: 1614712875328393
-+      indexed_time: 1616783281374630
-     }
-     {
--      indexed_time: 1614712872736732
-+      indexed_time: 1616783278484552
-     }
-   ]
--  last_id: &quot;1614712872736732&quot;
-+  last_id: &quot;1616783278484552&quot;
-}
-
-</code></pre>
-<h2 id="bigmap"><a class="header" href="#bigmap">BigMap</a></h2>
-<ul>
-<li><a href="./api_results/bigmap_white.json">curl https://white.better-call.dev/v1/bigmap/edo2net/38166/keys</a></li>
-<li><a href="./api_results/bigmap_ee.json">curl https://ee.better-call.dev/v1/bigmap/edo2net/38166/keys</a></li>
-</ul>
-<blockquote>
-<p>a different 10 were returned</p>
-</blockquote>
-<pre><code class="language-js">&gt; white key_hash
-=  'expruRnNMgBN2JkhA9jpqkZXPQr2AGbyxBJ5jYJDHhALiiF2WDWQfk',
-=  'exprusLyKAq6HvYwew6NfSc4tGb2wjrpiKyWizZVhDbYuPsJUNejt9',
-=  'exprutMXMcRii6jsQRrtww1mbBYLYwpddEdEgMi4XkpPneNCX3PhUr',
-=  'exprvPkryw7uv1DVvRECZpCAW4217fR2WsmCXSZhhkeRXqbd6DdkvN',
-   'exprtsU5B9C549nR686jeZS7TzszewC2bstRcgeoAdTbBMtupzjxqe',
-   'exprvQvVhhgUgUrshkNUepsHQZAChuNfXXJaLNLsNHvDmXqKNtSNkE',
-   'expruH79XPXEu5mNoPueJgQLubNMPy58JATHALS37oQqkvDu2wycNK',
-   'exprtr81jL3bMcCYr8iJwfQjbEyFnBZE2DznRAA5D596NjPzQU7DoP',
-   'exprtWzCqrHDKKX5SvbTC1ZBFyHnaMhGdKi1pytRd2QX315hbjaMu4',
-   'exprte42g3n8T686MfnTfgRtTC1qXTDKL5djEQokYzC397cqhrSb6z'
-
-&gt; ee key_hash
-   'exprty7uN1UEYLYVf8fAsZA5XJi3VcMgkF75Wk4dp2hefavjMdxsBu',
-   'exprv2PcZUsgfhKh79PEAFYEQHkgMDnUVfgYUS8ALhM4SYhCwsnZBY',
-   'exprtXmxCe739AhD9Kf1tUu2md7yjjzEVBNtzCtC8AVEQF5iZzXeGK',
-   'expruXTiUZWMDWbY7A6tM5a1HBS2nJ8vHL8AtpRaAqrMsoWFA5gGRV',
-   'expruge8n8nfjVZH9EHvp2DsnaABXZfTMCnk7cY971Q2G2p9XDv1sW',
-   'expruphceMhmxXhVBrpHo1qcGYQqNrqvPFqvTahmApjC7KGNZt9np3',
-=  'expruRnNMgBN2JkhA9jpqkZXPQr2AGbyxBJ5jYJDHhALiiF2WDWQfk',
-=  'exprusLyKAq6HvYwew6NfSc4tGb2wjrpiKyWizZVhDbYuPsJUNejt9',
-=  'exprutMXMcRii6jsQRrtww1mbBYLYwpddEdEgMi4XkpPneNCX3PhUr',
-=  'exprvPkryw7uv1DVvRECZpCAW4217fR2WsmCXSZhhkeRXqbd6DdkvN'
-</code></pre>
-<hr />
-<blockquote>
-<p>diffs for key_hash: <code>expruRnNMgBN2JkhA9jpqkZXPQr2AGbyxBJ5jYJDHhALiiF2WDWQfk</code></p>
-</blockquote>
-<pre><code class="language-json">   {
-     data: {
-       key: {
--        type: &quot;tuple&quot;
-+        type: &quot;namedtuple&quot;
-+        name: &quot;@pair_12&quot;
-         children: [
-           {
-+            name: &quot;@address_13&quot;
-           }
-           {
-+            name: &quot;@nat_14&quot;
-           }
-         ]
-       }
-       value: {
-+        name: &quot;@nat_15&quot;
-       }
-     }
-   }
-</code></pre>
-<h2 id="bigmap-1"><a class="header" href="#bigmap-1">BigMap</a></h2>
-<ul>
-<li><a href="./api_results/account_white.json">curl https://white.better-call.dev/v1/account/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ</a></li>
-<li><a href="./api_results/account_ee.json">curl https://ee.better-call.dev/v1/account/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ</a></li>
-</ul>
-<blockquote>
-<p>diffs</p>
-<ul>
-<li>No token array</li>
-<li>balance, tx_count, last_action</li>
-</ul>
-</blockquote>
-<pre><code class="language-json"> {
--  tokens: [
--    {
--      contract: &quot;KT1XgGvzQSYrvo4NCxwTvJ7tSbZqGcji4BeV&quot;
--      network: &quot;edo2net&quot;
--      level: 52997
--      token_id: 0
--      name: &quot;Issue #16: Festival of Lights - 新年快乐 (2021) (CN)&quot;
--      decimals: 0
--      balance: &quot;0&quot;
--    }
--    {
--      contract: &quot;KT1WcB4vxci5C1DjmJkMNSmaANFvgQDvdprZ&quot;
--      network: &quot;edo2net&quot;
--      level: 52671
--      token_id: 0
--      name: &quot;Tezitar&quot;
--      decimals: 0
--      balance: &quot;0&quot;
--    }
--    {
--      contract: &quot;KT1T66r244FFuH2hpfZgoKVRLXDtnfjBRxVc&quot;
--      network: &quot;edo2net&quot;
--      level: 52885
--      token_id: 0
--      name: &quot;Tezitar&quot;
--      decimals: 0
--      balance: &quot;0&quot;
--    }
--  ]
--  balance: 50746032
-+  balance: 50708942
--  tx_count: 33
-+  tx_count: 38
--  last_action: &quot;2021-03-05T19:58:59Z&quot;
-+  last_action: &quot;2021-03-30T15:57:29Z&quot;
- }
-</code></pre>
-<h2 id="bigmap-2"><a class="header" href="#bigmap-2">BigMap</a></h2>
-<ul>
-<li><a href="./api_results/account_metadata_white.json">curl https://white.better-call.dev/v1/account/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/metadata</a></li>
-<li><a href="./api_results/account_metadata_ee.json">curl https://ee.better-call.dev/v1/account/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/metadata</a></li>
-</ul>
-<blockquote>
-<p>diffs</p>
-<ul>
-<li>No <code>level</code> or <code>timestamp</code></li>
-<li>Added <code>extras</code></li>
-</ul>
-</blockquote>
-<pre><code class="language-json"> {
--  level: 105565
--  timestamp: &quot;2021-03-21T22:42:47Z&quot;
-+  extras: {
-+    pictures: [
-+      {
-+        link: &quot;https://gateway.pinata.cloud/ipfs/QmYdHNWLwrfvSTnUiGeu2jGLbMriz8KgDbUjLeSofXJKGX&quot;
-+        type: &quot;cover&quot;
-+      }
-+      {
-+        link: &quot;https://gateway.pinata.cloud/ipfs/QmYdHNWLwrfvSTnUiGeu2jGLbMriz8KgDbUjLeSofXJKGX&quot;
-+        type: &quot;logo&quot;
-+      }
-+    ]
-+    tokenCategory: &quot;games&quot;
-+  }
-   events: [
-     {
-       implementations: [
-         {
-           michelsonParameterEvent: {
--            entrypoints: null
-           }
-         }
-       ]
-     }
-   ]
- }
-</code></pre>
-<h2 id="bigmap-3"><a class="header" href="#bigmap-3">BigMap</a></h2>
-<ul>
-<li><a href="./api_results/contract_white.json">curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ</a></li>
-<li><a href="./api_results/contract_ee.json">curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ</a></li>
-</ul>
-<blockquote>
-<p>diffs</p>
-</blockquote>
-<pre><code class="language-json"> {
--  tokens: [
--  ]
-+  same_count: 0
-+  similar_count: 1
--  hash: &quot;a8bff7ae8bef1fedc3eaab954de96c20cff2b42cf0b721751b631fa7249028b76b71681fe6dce8e1eeb14d467fc7d95018c3dd69e7e5b77f51fb7f51c43a20dc&quot;
-+  hash: &quot;24f88407fd46aad11f609e9696c4151760c614fa0cb1ee925d1316c626f8e02fe38ba9efa1b3a98aa87f23bc42730718942904f32f3b044493c95a75a16a72d0&quot;
-   tags: [
-+    &quot;nft_ledger&quot;
-     &quot;fa2&quot;
-   ]
-   fail_strings: [
--    &quot;NO_PENDING_ADMIN&quot;
--    &quot;FA2_NOT_OPERATOR&quot;
-+    &quot;NOT_A_PENDING_ADMIN&quot;
-     &quot;FA2_NOT_OWNER&quot;
--    &quot;FA2_DUP_TOKEN_ID&quot;
-+    &quot;REWARD_ON_COOLDOWN&quot;
-     &quot;MOD by 0&quot;
-     &quot;NOT_AN_ADMIN&quot;
--    &quot;NOT_A_PENDING_ADMIN&quot;
-+    &quot;NO_PENDING_ADMIN&quot;
-     &quot;PAUSED&quot;
--    &quot;REWARD_ON_COOLDOWN&quot;
-+    &quot;FA2_NOT_OPERATOR&quot;
-+    &quot;FA2_DUP_TOKEN_ID&quot;
-   ]
-   annotations: [
-+    &quot;%set_admin&quot;
-+    &quot;%update_operators&quot;
-+    &quot;%remove_operator&quot;
-+    &quot;%create_token&quot;
-+    &quot;%paused&quot;
-+    &quot;%placeholder&quot;
-+    &quot;%balance_of&quot;
-+    &quot;%balance&quot;
-+    &quot;%add_operator&quot;
-+    &quot;%reward&quot;
-+    &quot;%token_total_supply&quot;
-+    &quot;%requests&quot;
-+    &quot;%callback&quot;
-     &quot;%transfer&quot;
--    &quot;%add_operator&quot;
--    &quot;%token_total_supply&quot;
--    &quot;%remove_operator&quot;
-+    &quot;%mint_tokens&quot;
-+    &quot;%users&quot;
-+    &quot;%drt&quot;
-+    &quot;%admin&quot;
-+    &quot;%assets&quot;
-+    &quot;%claim&quot;
-+    &quot;%tokens&quot;
-+    &quot;%request&quot;
-+    &quot;%pending_admin&quot;
-+    &quot;%metadata&quot;
-+    &quot;%owner&quot;
-+    &quot;%from_&quot;
-+    &quot;%operator&quot;
-+    &quot;%ledger&quot;
-+    &quot;%operators&quot;
-+    &quot;%token_metadata&quot;
-+    &quot;%pause&quot;
-+    &quot;%txs&quot;
-+    &quot;%burn_tokens&quot;
-     &quot;%confirm_admin&quot;
--    &quot;%update_operators&quot;
--    &quot;%tokens&quot;
--    &quot;%admin&quot;
--    &quot;%metadata&quot;
--    &quot;%create_token&quot;
--    &quot;%pause&quot;
--    &quot;%operator&quot;
--    &quot;%claim&quot;
-+    &quot;%token_id&quot;
-+    &quot;%to_&quot;
-     &quot;%amount&quot;
--    &quot;%drt&quot;
--    &quot;%ledger&quot;
--    &quot;%requests&quot;
--    &quot;%request&quot;
--    &quot;%set_admin&quot;
--    &quot;%placeholder&quot;
--    &quot;%callback&quot;
--    &quot;%reward&quot;
--    &quot;%from_&quot;
--    &quot;%operators&quot;
--    &quot;%assets&quot;
-     &quot;%token_info&quot;
--    &quot;%owner&quot;
--    &quot;%txs&quot;
--    &quot;%balance_of&quot;
--    &quot;%token_id&quot;
--    &quot;%paused&quot;
--    &quot;%to_&quot;
--    &quot;%mint_tokens&quot;
--    &quot;%pending_admin&quot;
--    &quot;%burn_tokens&quot;
--    &quot;%balance&quot;
--    &quot;%token_metadata&quot;
--    &quot;%users&quot;
-   ]
--  project_id: &quot;14d505e2f6d248edbf53feee03bc91f7&quot;
-+  project_id: &quot;2db5fece89464ca28def94d09e369a04&quot;
--  last_action: &quot;2021-03-28T23:56:19Z&quot;
-+  last_action: &quot;2021-03-30T15:57:29Z&quot;
--  tx_count: 565
-+  tx_count: 618
- }
-</code></pre>
-<h2 id="bigmap-4"><a class="header" href="#bigmap-4">BigMap</a></h2>
-<ul>
-<li><a href="./api_results/contract_storage_white.json">curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/storage</a></li>
-<li><a href="./api_results/contract_storage_ee.json">curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/storage</a></li>
-</ul>
-<blockquote>
-<ul>
-<li>before returned object but now returns array</li>
-</ul>
-</blockquote>
-<pre><code class="language-json"> {
-+  name: &quot;@pair_1&quot;
-   children: [
-     {
-       children: [
-         ...
-         ...
--        {
--          name: &quot;pending_admin&quot;
--        }
-+        {
-+          prim: &quot;option&quot;
-+          type: &quot;option&quot;
-+          name: &quot;pending_admin&quot;
-+          value: &quot;None&quot;
-+        }
-       ]
-     }
-     ...
-     ...
-     ...
-   ]
- }
-</code></pre>
-<h2 id="bigmap-5"><a class="header" href="#bigmap-5">BigMap</a></h2>
+                        <h2 id="bigmap"><a class="header" href="#bigmap">BigMap</a></h2>
 <ul>
 <li><a href="./api_results/contract_tokens_white.json">curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/tokens</a></li>
 <li><a href="./api_results/contract_tokens_ee.json">curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/tokens</a></li>
@@ -1228,19 +822,21 @@
 +  }
  ]
 </code></pre>
-<h2 id="kukai-dependencies-1"><a class="header" href="#kukai-dependencies-1">Kukai Dependencies</a></h2>
-<h4 id="tzkt"><a class="header" href="#tzkt">TZKT</a></h4>
-<ul>
-<li><code>https://api.${this.network}.tzkt.io/v1/operations/originations?contractManager=${pkh}</code></li>
-<li><code>https://api.${this.network}.tzkt.io/v1/accounts/${address}/operations?limit=20&amp;type=delegation,origination,transaction</code></li>
-</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
+                            <a rel="prev" href="api-contract-storage.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
 
+                        
+                            <a rel="next" href="tzkt-kukai-depend.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         
 
                         <div style="clear: both"></div>
@@ -1250,7 +846,15 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
+                    <a rel="prev" href="api-contract-storage.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
 
+                
+                    <a rel="next" href="tzkt-kukai-depend.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
                 
             </nav>
 
@@ -1283,14 +887,6 @@
         <!-- Custom JS scripts -->
         
 
-        
-        
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
-        
         
 
     </body>

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Error Handling - Quest Indexer</title>
+        <title>api-contract - Kukai Indexer Dependencies</title>
         
         
 
@@ -13,7 +13,7 @@
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Explanation of the Tezos Quest Indexer.">
+        <meta name="description" content="Explanation of Kukai Indexer Dependencies.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Quest System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="quest_indexer.html"><strong aria-hidden="true">1.1.</strong> Quest Indexer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="quest_operation_matching.html"><strong aria-hidden="true">1.1.1.</strong> Quest Operation Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="block_450404.html"><strong aria-hidden="true">1.1.1.1.</strong> Block Example</a></li><li class="chapter-item expanded "><a href="reward_status.html"><strong aria-hidden="true">1.1.1.2.</strong> Reward Status</a></li></ol></li><li class="chapter-item expanded "><a href="quest_daily_reward.html"><strong aria-hidden="true">1.1.2.</strong> Daily Reward</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="contract_quest.html"><strong aria-hidden="true">1.1.2.1.</strong> Contract Example</a></li><li class="chapter-item expanded "><a href="operation_example.html"><strong aria-hidden="true">1.1.2.2.</strong> Operation Example</a></li></ol></li><li class="chapter-item expanded "><a href="quest_criteria.html"><strong aria-hidden="true">1.1.3.</strong> Quest Criteria</a></li><li class="chapter-item expanded "><a href="quest_auction.html"><strong aria-hidden="true">1.1.4.</strong> Special Auction</a></li></ol></li><li class="chapter-item expanded "><a href="quest_rewarder.html"><strong aria-hidden="true">1.2.</strong> Quest Rewarder</a></li><li class="chapter-item expanded "><a href="quest_error_handling.html" class="active"><strong aria-hidden="true">1.3.</strong> Error Handling</a></li><li class="chapter-item expanded "><a href="quest_api.html"><strong aria-hidden="true">1.4.</strong> Swagger Api</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="developers.html"><strong aria-hidden="true">2.</strong> Developers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers_dependencies.html"><strong aria-hidden="true">2.1.</strong> Dependencies</a></li><li class="chapter-item expanded "><a href="developers_build.html"><strong aria-hidden="true">2.2.</strong> Build</a></li><li class="chapter-item expanded "><a href="env_config.html"><strong aria-hidden="true">2.3.</strong> Environment</a></li><li class="chapter-item expanded "><a href="developers_deploy.html"><strong aria-hidden="true">2.4.</strong> Deploy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers_deploy_node.html"><strong aria-hidden="true">2.4.1.</strong> node</a></li><li class="chapter-item expanded "><a href="developers_deploy_systemd.html"><strong aria-hidden="true">2.4.2.</strong> systemd</a></li></ol></li><li class="chapter-item expanded "><a href="database.html"><strong aria-hidden="true">2.5.</strong> Database</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="bcd-swagger.html"><strong aria-hidden="true">1.</strong> BCD Swagger</a></li><li class="chapter-item expanded "><a href="bcd-kukai-depend.html"><strong aria-hidden="true">2.</strong> Kukai BCD Dependencies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="api-tokens-transfers.html"><strong aria-hidden="true">2.1.</strong> api-tokens-transfers</a></li><li class="chapter-item expanded "><a href="api-bigmap.html"><strong aria-hidden="true">2.2.</strong> api-bigmap</a></li><li class="chapter-item expanded "><a href="api-account.html"><strong aria-hidden="true">2.3.</strong> api-account</a></li><li class="chapter-item expanded "><a href="api-account-metadata.html"><strong aria-hidden="true">2.4.</strong> api-account-metadata</a></li><li class="chapter-item expanded "><a href="api-contract.html" class="active"><strong aria-hidden="true">2.5.</strong> api-contract</a></li><li class="chapter-item expanded "><a href="api-contract-storage.html"><strong aria-hidden="true">2.6.</strong> api-contract-storage</a></li><li class="chapter-item expanded "><a href="api-contract-tokens.html"><strong aria-hidden="true">2.7.</strong> api-contract-tokens</a></li></ol></li><li class="chapter-item expanded "><a href="tzkt-kukai-depend.html"><strong aria-hidden="true">3.</strong> Kukai TZKT Dependencies</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -127,7 +127,7 @@
                         
                     </div>
 
-                    <h1 class="menu-title">Quest Indexer</h1>
+                    <h1 class="menu-title">Kukai Indexer Dependencies</h1>
 
                     <div class="right-buttons">
                         
@@ -163,28 +163,136 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="quest-error-handling"><a class="header" href="#quest-error-handling">Quest Error Handling</a></h2>
-<p>If any system critical errors happen you can get alerted via <code>Slack</code> on the <code>watchdog-quest</code> channel.  This uses the <a href="./env_config.html">SLACK_WEBHOOK</a> token for authentication.</p>
-<p>Alerts for:</p>
+                        <h2 id="bigmap"><a class="header" href="#bigmap">BigMap</a></h2>
 <ul>
-<li><strong>uncaughtException</strong>: causing process crash</li>
-<li><strong>transfer FA2</strong>: alerts if either there is an on-chain error or a <code>taquito</code> library error</li>
-<li><strong>special processing</strong>: errors in <a href="./quest_auction.html">Quest Auction</a></li>
-<li><strong>block orphans</strong>: errors if block forked more than the number of block in <a href="./env_config.html">DETECT_ORPHAN_BLOCKS</a></li>
+<li><a href="./api_results/contract_white.json">curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ</a></li>
+<li><a href="./api_results/contract_ee.json">curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ</a></li>
 </ul>
+<blockquote>
+<p>diffs</p>
+</blockquote>
+<pre><code class="language-json"> {
+-  tokens: [
+-  ]
++  same_count: 0
++  similar_count: 1
+-  hash: &quot;a8bff7ae8bef1fedc3eaab954de96c20cff2b42cf0b721751b631fa7249028b76b71681fe6dce8e1eeb14d467fc7d95018c3dd69e7e5b77f51fb7f51c43a20dc&quot;
++  hash: &quot;24f88407fd46aad11f609e9696c4151760c614fa0cb1ee925d1316c626f8e02fe38ba9efa1b3a98aa87f23bc42730718942904f32f3b044493c95a75a16a72d0&quot;
+   tags: [
++    &quot;nft_ledger&quot;
+     &quot;fa2&quot;
+   ]
+   fail_strings: [
+-    &quot;NO_PENDING_ADMIN&quot;
+-    &quot;FA2_NOT_OPERATOR&quot;
++    &quot;NOT_A_PENDING_ADMIN&quot;
+     &quot;FA2_NOT_OWNER&quot;
+-    &quot;FA2_DUP_TOKEN_ID&quot;
++    &quot;REWARD_ON_COOLDOWN&quot;
+     &quot;MOD by 0&quot;
+     &quot;NOT_AN_ADMIN&quot;
+-    &quot;NOT_A_PENDING_ADMIN&quot;
++    &quot;NO_PENDING_ADMIN&quot;
+     &quot;PAUSED&quot;
+-    &quot;REWARD_ON_COOLDOWN&quot;
++    &quot;FA2_NOT_OPERATOR&quot;
++    &quot;FA2_DUP_TOKEN_ID&quot;
+   ]
+   annotations: [
++    &quot;%set_admin&quot;
++    &quot;%update_operators&quot;
++    &quot;%remove_operator&quot;
++    &quot;%create_token&quot;
++    &quot;%paused&quot;
++    &quot;%placeholder&quot;
++    &quot;%balance_of&quot;
++    &quot;%balance&quot;
++    &quot;%add_operator&quot;
++    &quot;%reward&quot;
++    &quot;%token_total_supply&quot;
++    &quot;%requests&quot;
++    &quot;%callback&quot;
+     &quot;%transfer&quot;
+-    &quot;%add_operator&quot;
+-    &quot;%token_total_supply&quot;
+-    &quot;%remove_operator&quot;
++    &quot;%mint_tokens&quot;
++    &quot;%users&quot;
++    &quot;%drt&quot;
++    &quot;%admin&quot;
++    &quot;%assets&quot;
++    &quot;%claim&quot;
++    &quot;%tokens&quot;
++    &quot;%request&quot;
++    &quot;%pending_admin&quot;
++    &quot;%metadata&quot;
++    &quot;%owner&quot;
++    &quot;%from_&quot;
++    &quot;%operator&quot;
++    &quot;%ledger&quot;
++    &quot;%operators&quot;
++    &quot;%token_metadata&quot;
++    &quot;%pause&quot;
++    &quot;%txs&quot;
++    &quot;%burn_tokens&quot;
+     &quot;%confirm_admin&quot;
+-    &quot;%update_operators&quot;
+-    &quot;%tokens&quot;
+-    &quot;%admin&quot;
+-    &quot;%metadata&quot;
+-    &quot;%create_token&quot;
+-    &quot;%pause&quot;
+-    &quot;%operator&quot;
+-    &quot;%claim&quot;
++    &quot;%token_id&quot;
++    &quot;%to_&quot;
+     &quot;%amount&quot;
+-    &quot;%drt&quot;
+-    &quot;%ledger&quot;
+-    &quot;%requests&quot;
+-    &quot;%request&quot;
+-    &quot;%set_admin&quot;
+-    &quot;%placeholder&quot;
+-    &quot;%callback&quot;
+-    &quot;%reward&quot;
+-    &quot;%from_&quot;
+-    &quot;%operators&quot;
+-    &quot;%assets&quot;
+     &quot;%token_info&quot;
+-    &quot;%owner&quot;
+-    &quot;%txs&quot;
+-    &quot;%balance_of&quot;
+-    &quot;%token_id&quot;
+-    &quot;%paused&quot;
+-    &quot;%to_&quot;
+-    &quot;%mint_tokens&quot;
+-    &quot;%pending_admin&quot;
+-    &quot;%burn_tokens&quot;
+-    &quot;%balance&quot;
+-    &quot;%token_metadata&quot;
+-    &quot;%users&quot;
+   ]
+-  project_id: &quot;14d505e2f6d248edbf53feee03bc91f7&quot;
++  project_id: &quot;2db5fece89464ca28def94d09e369a04&quot;
+-  last_action: &quot;2021-03-28T23:56:19Z&quot;
++  last_action: &quot;2021-03-30T15:57:29Z&quot;
+-  tx_count: 565
++  tx_count: 618
+ }
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="quest_rewarder.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="api-account-metadata.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="quest_api.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="api-contract-storage.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -196,13 +304,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="quest_rewarder.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="api-account-metadata.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="quest_api.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="api-contract-storage.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

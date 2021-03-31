@@ -3,8 +3,8 @@ authors = ["Thomas Powers"]
 language = "en"
 multilingual = false
 src = "src"
-description = "Explanation of the Tezos Quest Indexer."
-title = "Quest Indexer"
+description = "Explanation of Kukai Indexer Dependencies."
+title = "Kukai Indexer Dependencies"
 
 [output.html]
 theme = "src/theme"

@@ -1,0 +1,71 @@
+{
+  "prim": "pair",
+  "type": "namedtuple",
+  "children": [
+    {
+      "prim": "pair",
+      "type": "namedtuple",
+      "name": "admin",
+      "children": [
+        {
+          "prim": "address",
+          "type": "address",
+          "name": "admin",
+          "value": "tz1ZufAMPExipHNGDUm88ZXJqn2fUi3V5hLd"
+        },
+        {
+          "prim": "bool",
+          "type": "bool",
+          "name": "paused",
+          "value": false
+        },
+        {
+          "name": "pending_admin"
+        }
+      ]
+    },
+    {
+      "prim": "pair",
+      "type": "namedtuple",
+      "name": "assets",
+      "children": [
+        {
+          "prim": "big_map",
+          "type": "big_map",
+          "name": "ledger",
+          "value": 38166
+        },
+        {
+          "prim": "big_map",
+          "type": "big_map",
+          "name": "operators",
+          "value": 38167
+        },
+        {
+          "prim": "big_map",
+          "type": "big_map",
+          "name": "token_metadata",
+          "value": 38168
+        },
+        {
+          "prim": "big_map",
+          "type": "big_map",
+          "name": "token_total_supply",
+          "value": 38169
+        }
+      ]
+    },
+    {
+      "prim": "big_map",
+      "type": "big_map",
+      "name": "metadata",
+      "value": 38170
+    },
+    {
+      "prim": "big_map",
+      "type": "big_map",
+      "name": "users",
+      "value": 38171
+    }
+  ]
+}

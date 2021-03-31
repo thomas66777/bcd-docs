@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Quest Criteria - Quest Indexer</title>
+        <title>api-contract-storage - Kukai Indexer Dependencies</title>
         
         
 
@@ -13,7 +13,7 @@
 
 
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="Explanation of the Tezos Quest Indexer.">
+        <meta name="description" content="Explanation of Kukai Indexer Dependencies.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
@@ -95,7 +95,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Quest System</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="quest_indexer.html"><strong aria-hidden="true">1.1.</strong> Quest Indexer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="quest_operation_matching.html"><strong aria-hidden="true">1.1.1.</strong> Quest Operation Matching</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="block_450404.html"><strong aria-hidden="true">1.1.1.1.</strong> Block Example</a></li><li class="chapter-item expanded "><a href="reward_status.html"><strong aria-hidden="true">1.1.1.2.</strong> Reward Status</a></li></ol></li><li class="chapter-item expanded "><a href="quest_daily_reward.html"><strong aria-hidden="true">1.1.2.</strong> Daily Reward</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="contract_quest.html"><strong aria-hidden="true">1.1.2.1.</strong> Contract Example</a></li><li class="chapter-item expanded "><a href="operation_example.html"><strong aria-hidden="true">1.1.2.2.</strong> Operation Example</a></li></ol></li><li class="chapter-item expanded "><a href="quest_criteria.html" class="active"><strong aria-hidden="true">1.1.3.</strong> Quest Criteria</a></li><li class="chapter-item expanded "><a href="quest_auction.html"><strong aria-hidden="true">1.1.4.</strong> Special Auction</a></li></ol></li><li class="chapter-item expanded "><a href="quest_rewarder.html"><strong aria-hidden="true">1.2.</strong> Quest Rewarder</a></li><li class="chapter-item expanded "><a href="quest_error_handling.html"><strong aria-hidden="true">1.3.</strong> Error Handling</a></li><li class="chapter-item expanded "><a href="quest_api.html"><strong aria-hidden="true">1.4.</strong> Swagger Api</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="developers.html"><strong aria-hidden="true">2.</strong> Developers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers_dependencies.html"><strong aria-hidden="true">2.1.</strong> Dependencies</a></li><li class="chapter-item expanded "><a href="developers_build.html"><strong aria-hidden="true">2.2.</strong> Build</a></li><li class="chapter-item expanded "><a href="env_config.html"><strong aria-hidden="true">2.3.</strong> Environment</a></li><li class="chapter-item expanded "><a href="developers_deploy.html"><strong aria-hidden="true">2.4.</strong> Deploy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="developers_deploy_node.html"><strong aria-hidden="true">2.4.1.</strong> node</a></li><li class="chapter-item expanded "><a href="developers_deploy_systemd.html"><strong aria-hidden="true">2.4.2.</strong> systemd</a></li></ol></li><li class="chapter-item expanded "><a href="database.html"><strong aria-hidden="true">2.5.</strong> Database</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="bcd-swagger.html"><strong aria-hidden="true">1.</strong> BCD Swagger</a></li><li class="chapter-item expanded "><a href="bcd-kukai-depend.html"><strong aria-hidden="true">2.</strong> Kukai BCD Dependencies</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="api-tokens-transfers.html"><strong aria-hidden="true">2.1.</strong> api-tokens-transfers</a></li><li class="chapter-item expanded "><a href="api-bigmap.html"><strong aria-hidden="true">2.2.</strong> api-bigmap</a></li><li class="chapter-item expanded "><a href="api-account.html"><strong aria-hidden="true">2.3.</strong> api-account</a></li><li class="chapter-item expanded "><a href="api-account-metadata.html"><strong aria-hidden="true">2.4.</strong> api-account-metadata</a></li><li class="chapter-item expanded "><a href="api-contract.html"><strong aria-hidden="true">2.5.</strong> api-contract</a></li><li class="chapter-item expanded "><a href="api-contract-storage.html" class="active"><strong aria-hidden="true">2.6.</strong> api-contract-storage</a></li><li class="chapter-item expanded "><a href="api-contract-tokens.html"><strong aria-hidden="true">2.7.</strong> api-contract-tokens</a></li></ol></li><li class="chapter-item expanded "><a href="tzkt-kukai-depend.html"><strong aria-hidden="true">3.</strong> Kukai TZKT Dependencies</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -127,7 +127,7 @@
                         
                     </div>
 
-                    <h1 class="menu-title">Quest Indexer</h1>
+                    <h1 class="menu-title">Kukai Indexer Dependencies</h1>
 
                     <div class="right-buttons">
                         
@@ -163,39 +163,53 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="quest-criteria"><a class="header" href="#quest-criteria">Quest Criteria</a></h2>
-<p>Each operation of the <a href="./block_450404.html">block</a> is iterated through for <a href="./quest_operation_matching.html">matching filters</a>.  If a match is detected it is parsed from <code>reward</code> property of the filter to get the pkh address.  A pseudo random number is generated to determine the <code>token_id</code> for FA2 transfer:</p>
+                        <h2 id="bigmap"><a class="header" href="#bigmap">BigMap</a></h2>
 <ul>
-<li><strong>reward property</strong>: <code>operations:contents:0:source</code> means the <code>source</code> property the first <code>0</code> <code>contents</code> of the <code>operation</code>
-<pre><code class="language-json">&quot;contents&quot;: [
-    {
-        ...
-        &quot;source&quot;: &quot;tz1d9h3tviTEqmbjG4ioWjBLpJj7VrRQA4Gs&quot;,
-        ...
-    }
-]
-</code></pre>
-</li>
-<li><strong>pseudo random number</strong>: the sha256 of the concatenated <code>${operation.hash}${block.header.level}${quest_id}</code> is digested.  Then each byte of the sha256 Buffer is <code>added</code> together then <code>mod</code> number of possible tokens</li>
+<li><a href="./api_results/contract_storage_white.json">curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/storage</a></li>
+<li><a href="./api_results/contract_storage_ee.json">curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/storage</a></li>
 </ul>
-<p>All matches get written into the <code>db</code> with the <a href="./reward_status.html">Reward Status</a> of <code>DETECTED_ON_CHAIN</code></p>
-<h3 id="post-processing"><a class="header" href="#post-processing">Post Processing</a></h3>
-<p>After each block indexing a <code>Post Processing</code> procedure is called. This procedure queries the <code>db</code> for anything that with a status of <code>DETECTED_ON_CHAIN</code> that has reached the needed level of block confirmations by <a href="./env_config.html">FITNESS_LEVEL</a>.  It then updates the status to <code>AWAITING_ADMIN_TRANSFER</code></p>
-<h3 id="orphan-blocks"><a class="header" href="#orphan-blocks">Orphan Blocks</a></h3>
-<p>Occasionally chain forks will occur near the <code>HEAD</code> block.  This can result in Orphans Blocks that have been indexed but are no longer part of the chain.  In these cases the Indexer will scan the blocks backwards from <code>HEAD</code> until the block at which the fork happened is found and purge the data in the <code>db</code> of any Orphans. The env property <a href="./env_config.html">DETECT_ORPHAN_BLOCKS</a> will store the historical block header info for this purpose.</p>
+<blockquote>
+<ul>
+<li>before returned object but now returns array</li>
+</ul>
+</blockquote>
+<pre><code class="language-json"> {
++  name: &quot;@pair_1&quot;
+   children: [
+     {
+       children: [
+         ...
+         ...
+-        {
+-          name: &quot;pending_admin&quot;
+-        }
++        {
++          prim: &quot;option&quot;
++          type: &quot;option&quot;
++          name: &quot;pending_admin&quot;
++          value: &quot;None&quot;
++        }
+       ]
+     }
+     ...
+     ...
+     ...
+   ]
+ }
+</code></pre>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
                         
-                            <a rel="prev" href="operation_example.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="api-contract.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
                         
 
                         
-                            <a rel="next" href="quest_auction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="api-contract-tokens.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         
@@ -207,13 +221,13 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
                 
-                    <a rel="prev" href="operation_example.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="api-contract.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
                 
 
                 
-                    <a rel="next" href="quest_auction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="api-contract-tokens.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
                 

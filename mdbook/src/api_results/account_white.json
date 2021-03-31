@@ -1,0 +1,36 @@
+{
+  "address": "tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf",
+  "network": "edo2net",
+  "balance": 50746032,
+  "tx_count": 33,
+  "last_action": "2021-03-05T19:58:59Z",
+  "tokens": [
+    {
+      "contract": "KT1XgGvzQSYrvo4NCxwTvJ7tSbZqGcji4BeV",
+      "network": "edo2net",
+      "level": 52997,
+      "token_id": 0,
+      "name": "Issue #16: Festival of Lights - 新年快乐 (2021) (CN)",
+      "decimals": 0,
+      "balance": "0"
+    },
+    {
+      "contract": "KT1WcB4vxci5C1DjmJkMNSmaANFvgQDvdprZ",
+      "network": "edo2net",
+      "level": 52671,
+      "token_id": 0,
+      "name": "Tezitar",
+      "decimals": 0,
+      "balance": "0"
+    },
+    {
+      "contract": "KT1T66r244FFuH2hpfZgoKVRLXDtnfjBRxVc",
+      "network": "edo2net",
+      "level": 52885,
+      "token_id": 0,
+      "name": "Tezitar",
+      "decimals": 0,
+      "balance": "0"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 0,
+    "symbol": "",
+    "name": "Mystery Map Genesis NFT",
+    "decimals": 0,
+    "description": "The unique digital token of the original art for a most mysterious map. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmPkJBaRnb2JwqA1S2sUQayTV9xT3x8MBnsmq7ForBWKuU",
+    "thumbnail_uri": "ipfs://QmP5f4Eh3XtnzFCeFXeUQYxo4gtF9ntdc65TrHZWQGuk6J",
+    "is_transferable": true,
+    "is_boolean_amount": true,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmTZbYcAEQofwB53gfZycQEjjhkSqyJczNvXMwTa6XEsdc"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 1,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 1",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmYtsitEmb23UCqtJERGBF5VUWJiLB1nCkGyrBtvfZGL7S",
+    "thumbnail_uri": "ipfs://QmYtsitEmb23UCqtJERGBF5VUWJiLB1nCkGyrBtvfZGL7S",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmY1GwpTTrsFdbehnwqJMa3zesgqjevMdKXRTPZMBAYWsB"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 2,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 2",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmQTYmjCjoD5yYyW92tv22nVEqqaD2oLfm2pMfWNrDe5wL",
+    "thumbnail_uri": "ipfs://QmQTYmjCjoD5yYyW92tv22nVEqqaD2oLfm2pMfWNrDe5wL",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmWRHZxPdzc7US6RJSDH4ZirCH91AVzGmd6PcaxdiHkTvx"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 3,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 3",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmUaj6xrfLSh1oBaTb68HyXRRuQC7HcwrpuSTDkeXSaYNk",
+    "thumbnail_uri": "ipfs://QmUaj6xrfLSh1oBaTb68HyXRRuQC7HcwrpuSTDkeXSaYNk",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmY1YaEAyL1kLbC7NvepLrZnJgpPrCGvexZc1sHCB4KWgQ"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 4,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 4",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmNwYYwssFjG2PFpbQmAGuwXF23NMkK1oq48wQqVVx87ji",
+    "thumbnail_uri": "ipfs://QmNwYYwssFjG2PFpbQmAGuwXF23NMkK1oq48wQqVVx87ji",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://Qmeq2tLvShCC166RNnA4q78oVkqFqTsWsSWDGDinAVT5vq"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 5,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 5",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmWAdfRFvvUcDsvKPDCV7W5aVGm6wK55A6Xc5uqqUXMK2k",
+    "thumbnail_uri": "ipfs://QmWAdfRFvvUcDsvKPDCV7W5aVGm6wK55A6Xc5uqqUXMK2k",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://Qmd57SauXyPf1gWAL1JuwjPUCj9hRWGgdBt4W68HvA8DrQ"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 6,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 6",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmVDGHNm5ju9hNvbguutAnNuUVVUxaz5BxxgsUSc2NdBwr",
+    "thumbnail_uri": "ipfs://QmVDGHNm5ju9hNvbguutAnNuUVVUxaz5BxxgsUSc2NdBwr",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmeCkbXn8nLKGkjhNfe5Y7tQUE7VLo4QV7cV5nHT83k3VU"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 7,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 7",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmdHCRwmCyg3zKF3m22o9hTyn5zCCcQ39Xs2BFtKcC7Xfe",
+    "thumbnail_uri": "ipfs://QmdHCRwmCyg3zKF3m22o9hTyn5zCCcQ39Xs2BFtKcC7Xfe",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmP75ieaZhi96AyDd9S7xTg22kVBnqcDshLw4hmQJ42wj7"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 8,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 8",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmRaeb8Taxwvp8Veu3eBJ3Fgnb1h4149bi5F8gww5YkWu7",
+    "thumbnail_uri": "ipfs://QmRaeb8Taxwvp8Veu3eBJ3Fgnb1h4149bi5F8gww5YkWu7",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmUaKvNndPKuW3EFvgo327dqZ5vMrEdLksi61GvBqnwMju"
+    }
+  },
+  {
+    "network": "edo2net",
+    "contract": "KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ",
+    "level": 105565,
+    "timestamp": "2021-03-21T22:42:47Z",
+    "token_id": 9,
+    "symbol": "",
+    "name": "Mystery Map Test: Piece 9",
+    "decimals": 0,
+    "description": "A piece to a most mysterious puzzle. Where it leads is uncertain, but an adventure lies ahead.",
+    "display_uri": "ipfs://QmdB7CUCsY622PHmFSF5vrTp9P29AdeEagCnLiCGFZMvoj",
+    "thumbnail_uri": "ipfs://QmdB7CUCsY622PHmFSF5vrTp9P29AdeEagCnLiCGFZMvoj",
+    "is_transferable": true,
+    "is_boolean_amount": false,
+    "should_prefer_symbol": false,
+    "extras": {
+      "@@empty": "ipfs://QmcRKLM4a4Q3QZbzGBJkChzLdyFSFdj4DQJ9eoq6EeEhmj"
+    }
+  }
+]

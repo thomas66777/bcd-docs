@@ -1,0 +1,342 @@
+[
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1ZufAMPExipHNGDUm88ZXJqn2fUi3V5hLd"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "22"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "49970"
+      },
+      "key_hash": "exprty7uN1UEYLYVf8fAsZA5XJi3VcMgkF75Wk4dp2hefavjMdxsBu",
+      "key_string": "Pair 0x00009c8671920e9b4ac694058b5a69fedf3dede6ed5a 22",
+      "level": 130258,
+      "timestamp": "2021-03-30T15:57:29Z"
+    },
+    "count": 10
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "22"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "1"
+      },
+      "key_hash": "exprv2PcZUsgfhKh79PEAFYEQHkgMDnUVfgYUS8ALhM4SYhCwsnZBY",
+      "key_string": "Pair 0x00001fbfa975a2018adb995e9b18dcc81111bcd4ec1c 22",
+      "level": 130258,
+      "timestamp": "2021-03-30T15:57:29Z"
+    },
+    "count": 1
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1ZufAMPExipHNGDUm88ZXJqn2fUi3V5hLd"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "11"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "49969"
+      },
+      "key_hash": "exprtXmxCe739AhD9Kf1tUu2md7yjjzEVBNtzCtC8AVEQF5iZzXeGK",
+      "key_string": "Pair 0x00009c8671920e9b4ac694058b5a69fedf3dede6ed5a 11",
+      "level": 130200,
+      "timestamp": "2021-03-30T15:27:29Z"
+    },
+    "count": 11
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "11"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "3"
+      },
+      "key_hash": "expruXTiUZWMDWbY7A6tM5a1HBS2nJ8vHL8AtpRaAqrMsoWFA5gGRV",
+      "key_string": "Pair 0x00001fbfa975a2018adb995e9b18dcc81111bcd4ec1c 11",
+      "level": 130200,
+      "timestamp": "2021-03-30T15:27:29Z"
+    },
+    "count": 3
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1ZufAMPExipHNGDUm88ZXJqn2fUi3V5hLd"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "14"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "49967"
+      },
+      "key_hash": "expruge8n8nfjVZH9EHvp2DsnaABXZfTMCnk7cY971Q2G2p9XDv1sW",
+      "key_string": "Pair 0x00009c8671920e9b4ac694058b5a69fedf3dede6ed5a 14",
+      "level": 130124,
+      "timestamp": "2021-03-30T14:44:41Z"
+    },
+    "count": 15
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "14"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "1"
+      },
+      "key_hash": "expruphceMhmxXhVBrpHo1qcGYQqNrqvPFqvTahmApjC7KGNZt9np3",
+      "key_string": "Pair 0x00001fbfa975a2018adb995e9b18dcc81111bcd4ec1c 14",
+      "level": 130124,
+      "timestamp": "2021-03-30T14:44:41Z"
+    },
+    "count": 1
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1h9R2dPcQArNUnaxtzgMC9DSHkppHsis6V"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "17"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "945"
+      },
+      "key_hash": "expruRnNMgBN2JkhA9jpqkZXPQr2AGbyxBJ5jYJDHhALiiF2WDWQfk",
+      "key_string": "Pair 0x0000ebe9598d00eb9048bb768ca6ad2a3482a5df9fae 17",
+      "level": 125541,
+      "timestamp": "2021-03-28T23:56:19Z"
+    },
+    "count": 39
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1PnnNjMKB4EDDejuznjNrjwVxh54qiuknS"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "17"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "10"
+      },
+      "key_hash": "exprusLyKAq6HvYwew6NfSc4tGb2wjrpiKyWizZVhDbYuPsJUNejt9",
+      "key_string": "Pair 0x00002d884ba7d77d37d7e10f0793f6b6e3ff979ac536 17",
+      "level": 125541,
+      "timestamp": "2021-03-28T23:56:19Z"
+    },
+    "count": 24
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1h9R2dPcQArNUnaxtzgMC9DSHkppHsis6V"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "15"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "950"
+      },
+      "key_hash": "exprutMXMcRii6jsQRrtww1mbBYLYwpddEdEgMi4XkpPneNCX3PhUr",
+      "key_string": "Pair 0x0000ebe9598d00eb9048bb768ca6ad2a3482a5df9fae 15",
+      "level": 125279,
+      "timestamp": "2021-03-28T21:42:31Z"
+    },
+    "count": 40
+  },
+  {
+    "data": {
+      "key": {
+        "prim": "pair",
+        "type": "namedtuple",
+        "name": "@pair_12",
+        "children": [
+          {
+            "prim": "address",
+            "type": "address",
+            "name": "@address_13",
+            "value": "tz1PnnNjMKB4EDDejuznjNrjwVxh54qiuknS"
+          },
+          {
+            "prim": "nat",
+            "type": "nat",
+            "name": "@nat_14",
+            "value": "15"
+          }
+        ]
+      },
+      "value": {
+        "prim": "nat",
+        "type": "nat",
+        "name": "@nat_15",
+        "value": "10"
+      },
+      "key_hash": "exprvPkryw7uv1DVvRECZpCAW4217fR2WsmCXSZhhkeRXqbd6DdkvN",
+      "key_string": "Pair 0x00002d884ba7d77d37d7e10f0793f6b6e3ff979ac536 15",
+      "level": 125279,
+      "timestamp": "2021-03-28T21:42:31Z"
+    },
+    "count": 23
+  }
+]

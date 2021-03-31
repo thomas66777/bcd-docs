@@ -1,0 +1,116 @@
+## BigMap
+
+* [curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ](./api_results/contract_white.json)
+* [curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ](./api_results/contract_ee.json)
+
+> diffs
+```json
+ {
+-  tokens: [
+-  ]
++  same_count: 0
++  similar_count: 1
+-  hash: "a8bff7ae8bef1fedc3eaab954de96c20cff2b42cf0b721751b631fa7249028b76b71681fe6dce8e1eeb14d467fc7d95018c3dd69e7e5b77f51fb7f51c43a20dc"
++  hash: "24f88407fd46aad11f609e9696c4151760c614fa0cb1ee925d1316c626f8e02fe38ba9efa1b3a98aa87f23bc42730718942904f32f3b044493c95a75a16a72d0"
+   tags: [
++    "nft_ledger"
+     "fa2"
+   ]
+   fail_strings: [
+-    "NO_PENDING_ADMIN"
+-    "FA2_NOT_OPERATOR"
++    "NOT_A_PENDING_ADMIN"
+     "FA2_NOT_OWNER"
+-    "FA2_DUP_TOKEN_ID"
++    "REWARD_ON_COOLDOWN"
+     "MOD by 0"
+     "NOT_AN_ADMIN"
+-    "NOT_A_PENDING_ADMIN"
++    "NO_PENDING_ADMIN"
+     "PAUSED"
+-    "REWARD_ON_COOLDOWN"
++    "FA2_NOT_OPERATOR"
++    "FA2_DUP_TOKEN_ID"
+   ]
+   annotations: [
++    "%set_admin"
++    "%update_operators"
++    "%remove_operator"
++    "%create_token"
++    "%paused"
++    "%placeholder"
++    "%balance_of"
++    "%balance"
++    "%add_operator"
++    "%reward"
++    "%token_total_supply"
++    "%requests"
++    "%callback"
+     "%transfer"
+-    "%add_operator"
+-    "%token_total_supply"
+-    "%remove_operator"
++    "%mint_tokens"
++    "%users"
++    "%drt"
++    "%admin"
++    "%assets"
++    "%claim"
++    "%tokens"
++    "%request"
++    "%pending_admin"
++    "%metadata"
++    "%owner"
++    "%from_"
++    "%operator"
++    "%ledger"
++    "%operators"
++    "%token_metadata"
++    "%pause"
++    "%txs"
++    "%burn_tokens"
+     "%confirm_admin"
+-    "%update_operators"
+-    "%tokens"
+-    "%admin"
+-    "%metadata"
+-    "%create_token"
+-    "%pause"
+-    "%operator"
+-    "%claim"
++    "%token_id"
++    "%to_"
+     "%amount"
+-    "%drt"
+-    "%ledger"
+-    "%requests"
+-    "%request"
+-    "%set_admin"
+-    "%placeholder"
+-    "%callback"
+-    "%reward"
+-    "%from_"
+-    "%operators"
+-    "%assets"
+     "%token_info"
+-    "%owner"
+-    "%txs"
+-    "%balance_of"
+-    "%token_id"
+-    "%paused"
+-    "%to_"
+-    "%mint_tokens"
+-    "%pending_admin"
+-    "%burn_tokens"
+-    "%balance"
+-    "%token_metadata"
+-    "%users"
+   ]
+-  project_id: "14d505e2f6d248edbf53feee03bc91f7"
++  project_id: "2db5fece89464ca28def94d09e369a04"
+-  last_action: "2021-03-28T23:56:19Z"
++  last_action: "2021-03-30T15:57:29Z"
+-  tx_count: 565
++  tx_count: 618
+ }
+```
