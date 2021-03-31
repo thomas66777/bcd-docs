@@ -1,4 +1,4 @@
-## BigMap
+## Account
 
 * [curl https://white.better-call.dev/v1/account/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ](./api_results/account_white.json)
 * [curl https://ee.better-call.dev/v1/account/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ](./api_results/account_ee.json)

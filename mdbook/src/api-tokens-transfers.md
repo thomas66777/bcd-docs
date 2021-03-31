@@ -1,4 +1,4 @@
-### api-tokens-transfers
+### Tokens Transfers
 
 * [curl https://white.better-call.dev/v1/tokens/edo2net/transfers/tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf](./api_results/tokens_white.json)
 * [curl https://ee.better-call.dev/v1/tokens/edo2net/transfers/tz1NXuEyKGjGXAEn5gSqzgwhkEqNeN5wcaLf](./api_results/tokens_ee.json)

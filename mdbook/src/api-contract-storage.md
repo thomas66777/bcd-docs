@@ -1,4 +1,4 @@
-## BigMap
+## Contract Storage
 
 * [curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/storage](./api_results/contract_storage_white.json)
 * [curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ/storage](./api_results/contract_storage_ee.json)

@@ -1,4 +1,4 @@
-## BigMap
+## Contract
 
 * [curl https://white.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ](./api_results/contract_white.json)
 * [curl https://ee.better-call.dev/v1/contract/edo2net/KT1RUSCZ7pJ3WNTuXFD44UpStmNRjA459guZ](./api_results/contract_ee.json)

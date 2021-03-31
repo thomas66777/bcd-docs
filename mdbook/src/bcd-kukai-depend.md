@@ -9,6 +9,6 @@ All better-call-dev dependencies are in `tzkt.service.ts`
 * [`${this.bcd}/bigmap/${this.network}/${bigMapId}/keys`](./api-bigmap.md)
 * [`${this.bcd}/account/${this.network}/${address}`](./api-account.md)
 * [`${this.bcd}/account/${this.network}/${contractAddress}/metadata`](./api-account-metadata.md)
-* [`${this.bcd}/contract/${this.network}/${contractAddress}`](./contract.md)
+* [`${this.bcd}/contract/${this.network}/${contractAddress}`](./api-contract.md)
 * [`${this.bcd}/contract/${this.network}/${contractAddress}/storage`](./api-contract-storage.md)
 * [`${this.bcd}/contract/${this.network}/${contractAddress}/tokens`](./api-contract-tokens.md)
