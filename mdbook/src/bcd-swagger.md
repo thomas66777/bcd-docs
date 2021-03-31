@@ -1,4 +1,4 @@
-## Quest System
+## Kukai Indexer Use
 
 BetterCallDev has two `swagger.json`:
 * [new](http://reward.tezos.help/bcd-new)
